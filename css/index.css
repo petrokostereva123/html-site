@@ -9,33 +9,40 @@ ul, ol {
     text-decoration: none;
 }
 
-header .logo {
+header nav {
     font-family: 'Patua One', cursive;
     display: flex;
+    align-content: center;
     justify-content: center;
     background: #0c59cf;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: -8px;
     margin-right: -8px;
-    margin-left: -8px;
+    max-width: 995px;
 }
 
-header .logo a {
-    text-decoration: none;
+.navbar-brand {
+    font-size: 2rem;
+    padding-top: 0;
+     padding-bottom: 0;
 }
 
-header .graficlogo{
-    color: white;
+@media(min-width: 800px){
+    header nav {
+        display: flex;
+        align-items: center;
+    }
 }
 
-header nav {
+/*header nav {
     margin: auto;
     min-width: 320px;
     max-width: 980px;
     max-height: 100px;
-}
+}*/
 
-header nav .topnav {
+
+/*header nav .topnav {
     background-color: #0c59cf; 
     margin-left: -8px;
 }
@@ -46,23 +53,20 @@ header nav .topnav a {
     text-align: center;
     text-transform: uppercase;
     margin-left: 8px;
-}
+}*/
 
-/*@media(min-width: 950px){
-    header nav{
-        display: flex;
-        align-items: center;
-    }
-}
 
 header section {
     background-image: url(../img/background.jpg);
-    min-height: 400px;
     background-size: cover;
     background-position: center;
     color: white;
-    font-size: 90px; 
     display: flex;
+    margin-top: 56px;
+    min-height: 400px;
+    max-width: 995px;
+    align-items: center;
+    justify-content: flex-end;
     flex-direction: column;
 }
 
@@ -70,11 +74,11 @@ header section a {
     font-family: 'Patua One', cursive;
     text-decoration: none;
     color: white;
-    font-size: 70px;
+    font-size: auto;
     line-height: 1px;
 }
 
 header section span {
     color: #0c59cf;
-}*/
+}
 
