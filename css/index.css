@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Patua+One&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1, h2, p, section, header, main, footer {
     margin: 0;
     padding: 0;
@@ -18,7 +22,7 @@ header nav {
     font-size: 2rem;
     margin-top: -8px;
     margin-right: -8px;
-    max-width: 1200px;
+    max-width: 1290px;
 }
 
 .navbar-brand {
@@ -34,7 +38,7 @@ header section {
     color: white;
     display: flex;
     min-height: 500px;
-    max-width: 1200px;
+    max-width: 1290px;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
@@ -164,4 +168,95 @@ h5 {
 .imgprice {
     min-height: 400px;
     max-width: 600px;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Patua One', cursive;
+}
+
+.wraper {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.contact-form {
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #0c59cf;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.input-fields, .msg {
+    width: 48%;   
+}
+
+.input-fields .input,
+.smg textarea{
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.smg textarea{
+    height: 186px;
+}
+
+.btn {
+    background: white;
+    color: #0c59cf;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px){
+.contact-form{
+    flex-direction: column;
+}
+}
+@media screen and (max-width: 600px){
+.input-fields{
+    width: 100%;
+}}
+
+.gotobtn{
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 50px;
+    font-size: 40px;
+    justify-content: left;
+    text-align: center;
+    position: fixed;
+    align-items: center;
+    background: #0c59cf;
+    color: white;
+    border-radius: 50px;
+    display: block; 
+}
+
+.clock-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    font-size: 60px;
+    color: #0c59cf;
 }
