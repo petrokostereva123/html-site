@@ -7,6 +7,11 @@ h1, h2, p, section, header, main, footer {
     padding: 0;
 }
 
+body{
+    max-width: 1200px;
+    align-self: center;
+}
+
 ul, ol {
     list-style: none;
     text-decoration: none;
@@ -162,7 +167,7 @@ h5 {
 .imgqueen {
     max-height: 300px;
     max-width: 300px;
-    margin-left: 50px;
+    margin-left: 10px;
 }
 
 @media (max-width: 480px) {
